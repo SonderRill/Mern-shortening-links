@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
-    // "server": "nodemon server.js",
-    // "client": "npm run start --prefix client",
-    // "client:install": "npm install --prefix client",
-    // "client:build": "npm run build --prefix client",
-    // "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Kirill Berezkin",
   "license": "MIT",
