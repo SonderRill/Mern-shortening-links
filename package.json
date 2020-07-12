@@ -1,0 +1,33 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "Social network for developers",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Kirill Berezkin",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "express": "^4.16.3",
+    "express-validator": "^6.5.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.9.16",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "shortid": "^2.2.15",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^1.17.3"
+  }
+}
